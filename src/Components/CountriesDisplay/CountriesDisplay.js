@@ -41,7 +41,7 @@ export default function FlagCard() {
     <p>Loading...</p>
   ) : filteredCountries.length > 0 ? (
     filteredCountries.map((country, index) => (
-      <div className={styles.card} key={index}>
+      <div className={`countryCard ${styles.card}`} key={index}>
         <img
           src={country.png}
           alt={country.common}
